@@ -15,6 +15,10 @@ namespace GitLearn
             var a= banana.GrowUp(10);
             Console.WriteLine("Banana 成长{0}年后，收获了{1}斤",10,a);
             Console.Read();
+            Apple apple = new Apple();
+            var b = apple.GrowUp(10);
+            Console.WriteLine("Apple 成长{0}年后,收获了{1}斤", 10, b);
+            Console.ReadKey();
         }
 
         private static int Add(int a, int b)
