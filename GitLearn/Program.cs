@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitLearn.Module;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,9 @@ namespace GitLearn
     {
         static void Main(string[] args)
         {
-            String ver = "1.0";
-            int a = 1;
-            int b = 2;
-            var result = Add(a, b);
-            Console.WriteLine("{0}+{1} result is {2}", a, b, result);
+            Banana banana = new Banana();
+            var a= banana.GrowUp(10);
+            Console.WriteLine("Banana 成长{0}年后，收获了{1}斤",10,a);
             Console.Read();
         }
 
