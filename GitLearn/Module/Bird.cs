@@ -8,7 +8,7 @@ namespace GitLearn.Module
 {
     class Bird:Animal
     {
-        public Bird()
+        public Bird():base("喜鹊")
         {
             Console.WriteLine("这是鸟类的构造函数");
         }
