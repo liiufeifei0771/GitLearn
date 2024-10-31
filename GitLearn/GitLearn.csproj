@@ -43,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\IFruit.cs" />
+    <Compile Include="ModeuleBase\Animal.cs" />
     <Compile Include="Module\Apple.cs" />
     <Compile Include="Module\Banana.cs" />
+    <Compile Include="Module\Bird.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -19,6 +19,13 @@ namespace GitLearn
             var b = apple.GrowUp(10);
             Console.WriteLine("Apple 成长{0}年后,收获了{1}斤", 10, b);
             Console.ReadKey();
+
+            Bird bird = new Bird();
+            bird.Name = "喜鹊";
+            Console.ReadKey();
+
+            Animal animal = new Animal("牛");
+            Console.ReadKey();
         }
 
         private static int Add(int a, int b)
