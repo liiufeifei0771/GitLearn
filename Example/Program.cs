@@ -10,18 +10,25 @@ namespace Example
     {
         static void Main(string[] args)
         {
-            Salesman salesman = new Salesman();
-            Nures nures = new Nures();
-            Bird bird = new Bird();
-
-            List<ISing> list = new List<ISing>();
-            list.Add(salesman);
-            list.Add(nures);
-            list.Add(bird);
-            foreach (ISing item in list)
+            Person ma = new Person("马化腾", 22);
+            Person lei = new Person("雷军", 21);
+            Person chen = new Person("陈天桥", 23);
+            List<Person> people = new List<Person>();
+            people.Add(ma);
+            people.Add(lei);
+            people.Add(chen);
+            foreach (Person item in people)
             {
-                item.Sing();
+                item.Show();
             }
+
+            people.Sort();
+            Console.WriteLine("=============排序后===============");
+            foreach (Person item in people)
+            {
+                item.Show();
+            }
+
         }
     }
 }
