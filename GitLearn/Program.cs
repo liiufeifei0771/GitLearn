@@ -11,26 +11,39 @@ namespace GitLearn
     {
         static void Main(string[] args)
         {
-            //Banana banana = new Banana();
-            //var a= banana.GrowUp(10);
-            //Console.WriteLine("Banana 成长{0}年后，收获了{1}斤",10,a);
-            //Console.Read();
-            //Apple apple = new Apple();
-            //var b = apple.GrowUp(10);
-            //Console.WriteLine("Apple 成长{0}年后,收获了{1}斤", 10, b);
+            ////Banana banana = new Banana();
+            ////var a= banana.GrowUp(10);
+            ////Console.WriteLine("Banana 成长{0}年后，收获了{1}斤",10,a);
+            ////Console.Read();
+            ////Apple apple = new Apple();
+            ////var b = apple.GrowUp(10);
+            ////Console.WriteLine("Apple 成长{0}年后,收获了{1}斤", 10, b);
+            ////Console.ReadKey();
+
+            //Bird bird = new Bird();
+            ////bird.Name = "喜鹊";
             //Console.ReadKey();
 
-            Bird bird = new Bird();
-            //bird.Name = "喜鹊";
-            Console.ReadKey();
+            ////Animal animal = new Animal("牛");
+            ////Console.ReadKey();
+            Dictionary<string, int> keyValuePairs = new Dictionary<string, int>();
+            keyValuePairs.Add("a", 0);
+            keyValuePairs.Add("b", 1);
+            keyValuePairs.Add("c", 2);
+            keyValuePairs.Add("d", 3);
 
-            //Animal animal = new Animal("牛");
-            //Console.ReadKey();
+            foreach (var item in keyValuePairs)
+            {
+                Console.WriteLine(item.Key + " " + item.Value);
+            }
+            Console.ReadLine();
         }
 
         private static int Add(int a, int b)
         {
             return a + b;
         }
+
+
     }
 }
