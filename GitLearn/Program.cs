@@ -1,5 +1,6 @@
 ﻿using GitLearn.Module;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,16 @@ namespace GitLearn
                 Console.WriteLine(item.Key + " " + item.Value);
             }
             Console.ReadLine();
+
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("a", 0);
+            hashtable.Add("b", 1);
+            hashtable.Add("c", 2);
+            foreach (DictionaryEntry item in hashtable)
+            {
+                Console.WriteLine(item.Key + ":" + item.Value);
+            }
+            Console.ReadKey();
         }
 
         private static int Add(int a, int b)
